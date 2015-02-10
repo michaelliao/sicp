@@ -13,7 +13,14 @@
 
 (define (calc-exp op args)
   (cond ((procedure? op) (apply op args))
-        ((symbol? op) (apply (eval op (interaction-environment)) args))
+        ((symbol? op) (apply (lookup op) args))
+        (else (raise "Invalid operator"))))
+
+(define (lookup sym)
+  (cond ((eq? sym '+) +)
+        ((eq? sym '-) -)
+        ((eq? sym '*) *)
+        ((eq? sym '/) /)
         (else (raise "Invalid operator"))))
 
 ;; test
