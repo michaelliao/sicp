@@ -1,3 +1,5 @@
+#!/usr/bin/env petite
+
 ;; f(n) = n * f(n-1)
 
 (define (factorial n)
@@ -9,8 +11,10 @@
 
 ;; test
 
+(display (factorial 1))
+(newline)
 (display (factorial 3))
 (newline)
 (display (factorial 10))
 (newline)
-(display (factorial 20))
+(exit)

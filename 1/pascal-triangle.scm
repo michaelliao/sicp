@@ -1,3 +1,5 @@
+#!/usr/bin/env petite
+
 ;; pascal's triangle
 ;;     1
 ;;    1 1
@@ -24,6 +26,8 @@
     (cond ((<= n 0) '())
           ((>= n 1) '(1) (p-triangle-iter '(1) (- n 1)))))
 
+;; test
+
 (display (p-triangle 0))
 (newline)
 (display (p-triangle 1))
@@ -34,4 +38,16 @@
 (newline)
 (display (p-triangle 4))
 (newline)
+(display (p-triangle 5))
+(newline)
+(display (p-triangle 6))
+(newline)
+(display (p-triangle 7))
+(newline)
+(display (p-triangle 8))
+(newline)
+(display (p-triangle 9))
+(newline)
 (display (p-triangle 10))
+(newline)
+(exit)

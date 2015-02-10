@@ -1,3 +1,5 @@
+#!/usr/bin/env petite
+
 ;; get the nth Fibonacci number
 ;; (fib 0) ==> 0
 ;; (fib 1) ==> 1
@@ -19,3 +21,6 @@
       (test (append lst (list (fib n))) (+ n 1))))
 
 (display (test '() 0))
+(newline)
+(exit)
+

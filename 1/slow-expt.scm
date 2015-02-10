@@ -1,3 +1,5 @@
+#!/usr/bin/env petite
+
 ;; b ^ n = b * b ^ (n-1)
 ;; b ^ 0 = 1
 
@@ -8,6 +10,10 @@
 
 ;; test
 
+(display "3 ** 5 = ")
 (display (slow-expt 3 5))
 (newline)
+(display "2 ** 20 = ")
 (display (slow-expt 2 20))
+(newline)
+(exit)

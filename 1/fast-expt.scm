@@ -1,3 +1,5 @@
+#!/usr/bin/env petite
+
 ;; fast expt:
 
 ;; b ^ n = (b ^ (n/2)) ^ 2 if n is even
@@ -12,8 +14,12 @@
         ((odd? n) (* b (fast-expt b (- n 1))))
         (else (square (fast-expt b (/ n 2))))))
 
-(display "3 ^ 5 = ")
+;; test
+
+(display "3 ** 5 = ")
 (display (fast-expt 3 5))
 (newline)
-(display "2 ^ 20 = ")
+(display "2 ** 20 = ")
 (display (fast-expt 2 20))
+(newline)
+(exit)

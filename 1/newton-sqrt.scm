@@ -1,3 +1,5 @@
+#!/usr/bin/env petite
+
 ;; newton-sqrt
 
 (define (newton-sqrt x)
@@ -18,8 +20,10 @@
 
   (sqrt-iter 1.0 x))
 
-;; some test
+;; test
 
 (display (newton-sqrt 2))
 (newline)
 (display (newton-sqrt 3))
+(newline)
+(exit)

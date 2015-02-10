@@ -1,3 +1,5 @@
+#!/usr/bin/env petite
+
 ;; greatest common divisors
 
 (define (gcd a b)
@@ -21,3 +23,6 @@
 
 (display "(gcd 23 31) ==> ")
 (display (gcd 23 31))
+(newline)
+
+(exit)
