@@ -1,3 +1,7 @@
+#!/usr/bin/env petite
+
+;; rational operations
+
 (define (make-rat n d)
   (cons n d))
 
@@ -48,3 +52,5 @@
 (print-rat (mul-rat (make-rat 1 2) (make-rat 2 3)))
 
 (print-rat (div-rat (make-rat 1 2) (make-rat 1 3)))
+
+(exit)

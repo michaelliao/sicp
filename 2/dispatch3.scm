@@ -1,3 +1,5 @@
+#!/usr/bin/env petite
+
 ;; using procedure to represent pair
 
 (define (cons x y)
@@ -21,10 +23,18 @@
   (how-many z 3))
 
 ;; test
-(define x (cons 9 6))
+
+(define x (cons 10 20))
+(display "(cons 10 20) ==> x = ")
 (display x)
 (newline)
+
+(display "(car x) ==> ")
 (display (car x))
 (newline)
+
+(display "(cdr x) ==> ")
 (display (cdr x))
 (newline)
+
+(exit)

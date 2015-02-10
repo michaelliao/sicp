@@ -1,3 +1,7 @@
+#!/usr/bin/env petite
+
+;; list-op.scm
+
 (define (list-ref items n)
   (if (= n 0)
       (car items)
@@ -33,4 +37,4 @@
 (newline)
 (display (last '(1 2 3 '(4 5))))
 (newline)
-
+(exit)
