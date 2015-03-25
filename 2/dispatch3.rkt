@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 ;; using procedure to represent pair
 
@@ -36,5 +36,3 @@
 (display "(cdr x) ==> ")
 (display (cdr x))
 (newline)
-
-(exit)

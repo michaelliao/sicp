@@ -1,17 +1,15 @@
-#!/usr/bin/env petite
+#lang racket
 
 ;; using procedure to represent pair
 
 (define (cons x y)
-  (lambda (m)
-    (cond ((= m 0) x)
-          ((= m 1) y))))
+  (lambda (f) (f x y)))
 
 (define (car z)
-  (z 0))
+  (z (lambda (p q) p)))
 
 (define (cdr z)
-  (z 1))
+  (z (lambda (p q) q)))
 
 ;; test
 
@@ -27,5 +25,3 @@
 (display "(cdr x) ==> ")
 (display (cdr x))
 (newline)
-
-(exit)

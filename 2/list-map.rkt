@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 (define (map-list func items)
   (if (null? items)
@@ -19,4 +19,3 @@
 (newline)
 (display (map-list (lambda (x) (* x x x)) '(1 2 3 4 5)))
 (newline)
-(exit)

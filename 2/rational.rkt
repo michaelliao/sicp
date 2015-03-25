@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 ;; rational operations
 
@@ -52,5 +52,3 @@
 (print-rat (mul-rat (make-rat 1 2) (make-rat 2 3)))
 
 (print-rat (div-rat (make-rat 1 2) (make-rat 1 3)))
-
-(exit)

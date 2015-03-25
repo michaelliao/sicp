@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 ;; list-op.scm
 
@@ -37,4 +37,3 @@
 (newline)
 (display (last '(1 2 3 '(4 5))))
 (newline)
-(exit)
