@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 ;; pascal's triangle
 ;;     1
@@ -50,4 +50,3 @@
 (newline)
 (display (p-triangle 10))
 (newline)
-(exit)

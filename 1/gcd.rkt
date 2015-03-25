@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 ;; greatest common divisors
 
@@ -24,5 +24,3 @@
 (display "(gcd 23 31) ==> ")
 (display (gcd 23 31))
 (newline)
-
-(exit)

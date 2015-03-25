@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 ;; newton-sqrt
 
@@ -26,4 +26,3 @@
 (newline)
 (display (newton-sqrt 3))
 (newline)
-(exit)

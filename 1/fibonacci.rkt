@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 ;; get the nth Fibonacci number
 ;; (fib 0) ==> 0
@@ -22,5 +22,3 @@
 
 (display (test '() 0))
 (newline)
-(exit)
-

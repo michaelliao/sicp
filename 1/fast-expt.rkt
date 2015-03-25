@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 ;; fast expt:
 
@@ -22,4 +22,3 @@
 (display "2 ** 20 = ")
 (display (fast-expt 2 20))
 (newline)
-(exit)

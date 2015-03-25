@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 ;; f(n) = n * f(n-1)
 
@@ -17,4 +17,3 @@
 (newline)
 (display (factorial 10))
 (newline)
-(exit)

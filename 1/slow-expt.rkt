@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 ;; b ^ n = b * b ^ (n-1)
 ;; b ^ 0 = 1
@@ -16,4 +16,3 @@
 (display "2 ** 20 = ")
 (display (slow-expt 2 20))
 (newline)
-(exit)
