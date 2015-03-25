@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 ;; eval S-expression contains only +, -, *
 
