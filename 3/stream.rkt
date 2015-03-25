@@ -1,4 +1,4 @@
-#!/usr/bin/env petite
+#lang racket
 
 (define-syntax delay
   (syntax-rules ()
@@ -32,10 +32,6 @@
 
 (define (stream-cdr s)
   (force (cdr s)))
-
-(define (stream-map proc s)
-  (cons-stream (proc (stream-car s))
-               (stream-map proc (stream-cdr s))))
 
 (define (stream-filter pred s)
   (if (pred (stream-car s))
@@ -85,5 +81,3 @@
 (define fib-stream (fib 0 1))
 
 (print-stream fib-stream)
-
-(exit)
